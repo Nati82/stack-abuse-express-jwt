@@ -4,8 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon auth.js",
-    "startt": "nodemon books.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
