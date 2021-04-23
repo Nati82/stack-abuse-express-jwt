@@ -20,8 +20,8 @@ const users = [
 ]
 
 const refreshTokens = [];
-
-app.use(bodyParser.json());
+app.use(express.urlencoded())
+app.use(express.json());
 
 app.post('/login', (req, res) => {
     // read username and password from request body
