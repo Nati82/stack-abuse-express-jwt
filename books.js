@@ -1,13 +1,12 @@
 
 const express = require('express');
-const bodyParser = require('body-parser');
 
 const jwt = require('jsonwebtoken');
 const app = express();
 
 const accessTokenSecret = 'somerandomaccesstoken';
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 const authenticateJWT = (req, res, next) => {
     const authHeader = req.headers.authorization;
